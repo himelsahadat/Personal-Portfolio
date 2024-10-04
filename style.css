@@ -22,7 +22,7 @@ body {
   color: var(--text-color);
 }
 .header {
-  position: fixed;
+  position: sticky;
   width: 100%;
   padding: 1.5rem 10%;
   background: rgba(0, 0, 0, 0.3);
@@ -57,3 +57,197 @@ body {
   color: var(--main-color);
   border-bottom: 3px solid var(--main-color);
 }
+
+/* Home Section Start */
+/* Home Section Start */
+
+section {
+  min-height: 10vh;
+  padding: 4rem 10% 10rem;
+}
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15rem;
+}
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  text-align: left;
+  justify-content: center;
+  margin-top: 3rem;
+}
+span {
+  color: var(--main-color);
+}
+.home-content h3 {
+  font-size: 3.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.home-content h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 1.5rem;
+}
+.home-img {
+  border-radius: 50%;
+}
+.home-img img {
+  position: relative;
+  top: 3rem;
+  border-radius: 50%;
+  height: 574px;
+  width: 29vw;
+  cursor: pointer;
+  box-shadow: 0 0 25px var(--main-color);
+  transition: 0.4s ease-in-out;
+}
+.home-img img:hover {
+  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
+    0 0 100px var(--main-color);
+  transition: 0.7s;
+}
+.home-content p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.8;
+  max-width: 1000px;
+}
+.social-icon a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 2rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  color: var(--main-color);
+  background: transparent;
+  margin: 2rem 1rem 2rem 0;
+  border: 2px solid var(--main-color);
+  transition: 0.3s ease-in-out;
+}
+.social-icon a:hover {
+  color: var(--text-color);
+  background-color: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color);
+  transition: 0.7s;
+  transform: scale(1.3) translate(-5px);
+}
+.btn {
+  display: inline-block;
+  border: 2px solid transparent;
+  padding: 1rem 2.1rem;
+  border-radius: 4rem;
+  font-size: 1rem;
+  box-shadow: 0 0 25px var(--main-color);
+  letter-spacing: 0.1rem;
+  background: var(--main-color);
+  font-weight: 600;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.btn:hover{
+  box-shadow: 0 0 50px var(--main-color);
+  transform: scale(1.05);
+}
+.btn-group{
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.btn-group a:nth-of-type(2){
+  color: var(--main-color);
+  background-color: black;
+  border: 2px solid var(--main-color);
+  box-shadow: 0 0 25px transparent;
+}
+.btn-group a:nth-of-type(2):hover{
+box-shadow: 0 0 25px var(--main-color);
+background-color: var(--main-color);
+color: black;
+}
+/* Home Section End */
+
+/* Education Section Start */
+.education{
+ 
+  padding: 50px 15px;
+  background-color: var(--second-bg-color);
+}
+.heading{
+  text-align: center;
+  font-size: 3.5rem;
+  margin: 2rem 0;
+}
+.timeline-items{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.timeline-items::before{
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: var(--main-color);
+  left: calc(50% - 1px);
+}
+.timeline-item{
+  margin-bottom: 40px;
+  width: 100%;
+  position: relative;
+}
+.timeline-item:nth-child(odd){
+  padding-right: calc(50% + 30px);
+  text-align: right;
+}
+.timeline-item:nth-child(even){
+  padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+  height: 21px;
+  width: 21px;
+  position: absolute;
+  left: calc(50% - 9px);
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--main-color),
+  0 0 50px var(--main-color);
+  top: 10px;
+  background-color: var(--main-color);
+}
+.timeline-content{
+  border: 3px solid var(--main-color);
+  background-color: var(--bg-color);
+  padding: 30px 50px;
+  border-radius: 4rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--main-color);
+}
+.timeline-content:hover{
+  box-shadow: 0 0 25px var(--main-color);
+  transform: scale(1.05);
+}
+.timeline-content h3{
+  font-size: 20px;
+  color: white;
+  margin: 0 0 10px;
+  font-weight: 500;
+}
+.timeline-content p{
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+.timeline-date{
+  padding: 10px;
+}
+/* Education Section End */
