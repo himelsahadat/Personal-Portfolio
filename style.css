@@ -152,77 +152,77 @@ span {
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
-.btn:hover{
+.btn:hover {
   box-shadow: 0 0 50px var(--main-color);
   transform: scale(1.05);
 }
-.btn-group{
+.btn-group {
   display: flex;
   align-items: center;
   gap: 1.2rem;
 }
-.btn-group a:nth-of-type(2){
+.btn-group a:nth-of-type(2) {
   color: var(--main-color);
   background-color: black;
   border: 2px solid var(--main-color);
   box-shadow: 0 0 25px transparent;
 }
-.btn-group a:nth-of-type(2):hover{
-box-shadow: 0 0 25px var(--main-color);
-background-color: var(--main-color);
-color: black;
+.btn-group a:nth-of-type(2):hover {
+  box-shadow: 0 0 25px var(--main-color);
+  background-color: var(--main-color);
+  color: black;
 }
 /* Home Section End */
 
 /* Education Section Start */
-.education{
- 
-  padding: 50px 15px;
+/* Education Section Start */
+/* Education Section Start */
+.education {
+  padding: 5px 15px;
   background-color: var(--second-bg-color);
 }
-.heading{
+.heading {
   text-align: center;
   font-size: 3.5rem;
   margin: 2rem 0;
 }
-.timeline-items{
+.timeline-items {
   max-width: 1200px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
 }
-.timeline-items::before{
+.timeline-items::before {
   content: "";
   position: absolute;
   width: 5px;
-  height: 100%;
+  height: 93%;
   background-color: var(--main-color);
   left: calc(50% - 1px);
 }
-.timeline-item{
+.timeline-item {
   margin-bottom: 40px;
   width: 100%;
   position: relative;
 }
-.timeline-item:nth-child(odd){
+.timeline-item:nth-child(odd) {
   padding-right: calc(50% + 30px);
   text-align: right;
 }
-.timeline-item:nth-child(even){
+.timeline-item:nth-child(even) {
   padding-left: calc(50% + 30px);
 }
-.timeline-dot{
+.timeline-dot {
   height: 21px;
   width: 21px;
   position: absolute;
   left: calc(50% - 9px);
   border-radius: 50%;
-  box-shadow: 0 0 25px var(--main-color),
-  0 0 50px var(--main-color);
-  top: 10px;
+  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
+
   background-color: var(--main-color);
 }
-.timeline-content{
+.timeline-content {
   border: 3px solid var(--main-color);
   background-color: var(--bg-color);
   padding: 30px 50px;
@@ -231,23 +231,175 @@ color: black;
   cursor: pointer;
   box-shadow: 0 0 10px var(--main-color);
 }
-.timeline-content:hover{
+.timeline-content:hover {
   box-shadow: 0 0 25px var(--main-color);
   transform: scale(1.05);
 }
-.timeline-content h3{
+.timeline-content h3 {
   font-size: 20px;
   color: white;
   margin: 0 0 10px;
   font-weight: 500;
 }
-.timeline-content p{
+.timeline-content p {
   color: white;
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
 }
-.timeline-date{
-  padding: 10px;
+.timeline-date {
+  padding-bottom: 20px;
 }
 /* Education Section End */
+/* Education Section End */
+
+/* Certificate Section Start */
+/* Certificate Section Start */
+.certificate {
+  background-color: var(--bg-color);
+  color: black;
+}
+.certificate-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+.certificate .heading {
+  color: white;
+}
+.certificate-box {
+  background-color: var(--main-color);
+  height: 270px;
+  border-radius: 2rem;
+  border: 5px solid transparent;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.certificate-box:hover {
+  background: white;
+  color: black;
+  border: 5px solid var(--main-color);
+  transform: scale(1.03);
+}
+.certificate-info {
+  max-height: 200px;
+  padding: 3rem 5rem;
+}
+.certificate-info h4 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 2;
+}
+.certificate-info p {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 600;
+  max-height: 100px;
+  margin: auto;
+}
+.certificate-info h4 a i {
+  position: relative;
+  font-size: 22px;
+  left: 20px;
+}
+
+/* Certificate Section End */
+/* Certificate Section End */
+
+/* Skill Section Start */
+/* Skill Section Start */
+.skill {
+  background-color: var(--second-bg-color);
+}
+.skill-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skill-container .skill-box {
+  flex-basis: 46%;
+}
+.skill-box h2 {
+  margin-bottom: 30px;
+  position: relative;
+}
+.skill-box h2::before {
+  content: "";
+  width: 20%;
+  background-color: #535455;
+  height: 3px;
+  position: absolute;
+  top: 125%;
+  left: 0;
+}
+.skill-box h2::after {
+  content: "";
+  width: 10%;
+  background-color: rgb(158, 156, 156);
+  height: 3px;
+  position: absolute;
+  top: 125%;
+  left: 0;
+}
+.subject {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+  font-weight: thin;
+}
+.progress-bar {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background-color: #535455;
+}
+.progress-bar:after {
+  content: attr(value);
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+}
+.progress-line {
+  position: absolute;
+  border-radius: 15px;
+  width: 100%;
+  height: 5px;
+  background-color: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color);
+  transition: 0.5s ease-in-out;
+}
+.progress-line::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  left: 100%;
+  transform: translate(-50%, -26%);
+  box-shadow: 0 0 25px var(--main-color);
+  background-color: var(--main-color);
+}
+/* Skill Section End */
+/* Skill Section End */
+
+/* Contact Section Start */
+/* Contact Section Start */
+.contact form{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 3rem;
+text-align: center;
+margin: 5rem auto;
+}
+.contact form .input-box{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* Contact Section End */
+/* Contact Section End */
